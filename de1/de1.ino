@@ -113,7 +113,7 @@ if(digitalRead(Down)==LOW)
  while(digitalRead(Mode)!=LOW )
  {delay(100);}
    delay(500);
-   for(int i=0; i<12;i++)
+   for(int i=0; i<1;i++)
    {
       lcd.clear();
    lcd.setCursor(0,1);
@@ -142,7 +142,7 @@ if(digitalRead(Down)==LOW)
  while(digitalRead(Mode)!=LOW )
  {delay(100);}
    delay(500);
-   for(int j=0; j<12;j++)
+   for(int j=0; j<1;j++)
    {
       lcd.clear();
    lcd.setCursor(0,1);
@@ -160,7 +160,7 @@ if(digitalRead(Down)==LOW)
     {giayra[j] = chinhgiay(giayra[j]);
       }
             delay(500);
-              Serial.println(giora[j]);
+        
       
     }
    lcd.clear();

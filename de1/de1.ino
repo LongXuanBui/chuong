@@ -508,7 +508,7 @@ tg=0;
     }
   giovao[i] = Serial.readStringUntil('\n').toInt();
  
-if(giovao[i]<=0||giovao[i]>23)
+if(giovao[i]<0||giovao[i]>23)
   { Serial.println();
       Serial.println("nhap lai gio:");
        while(Serial.available()==0)
@@ -524,7 +524,7 @@ if(giovao[i]<=0||giovao[i]>23)
    delay(100);
     }
    phutvao[i] = Serial.readStringUntil('\n').toInt();
-    if(phutvao[i]<=0||phutvao[i]>59)
+    if(phutvao[i]<0||phutvao[i]>59)
   { Serial.println();
       Serial.println("nhap lai phut:");
        while(Serial.available()==0)
@@ -541,7 +541,7 @@ if(giovao[i]<=0||giovao[i]>23)
    delay(100);
     }
    giayvao[i] = Serial.readStringUntil('\n').toInt();
-    if(giayvao[i]<=0||giayvao[i]>59)
+    if(giayvao[i]<0||giayvao[i]>59)
   { Serial.println();
       Serial.println("nhap lai giay:");
        while(Serial.available()==0)
@@ -570,7 +570,7 @@ Serial.println("Nhap  moc  thoi gian ra choi:");
     }
   giora[i] = Serial.readStringUntil('\n').toInt();
  
-if(giora[i]<=0||giora[i]>23)
+if(giora[i]<0||giora[i]>23)
   { Serial.println();
       Serial.println("nhap lai gio:");
        while(Serial.available()==0)
